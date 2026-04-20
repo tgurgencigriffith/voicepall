@@ -1,5 +1,5 @@
 @echo off
-REM VoicePall launcher for Windows
+REM voxam launcher for Windows
 REM This starts the application without showing a console window
 
-start "" pythonw "%~dp0voicepall.pyw"
+start "" pythonw "%~dp0voxam.pyw"
