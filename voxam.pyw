@@ -1,5 +1,5 @@
 """
-VoicePall — Voice Biomarker Extraction for Palliative Care Research
+voxam — Voice Biomarker Extraction for Palliative Care Research
 ====================================================================
 
 A double-clickable application for extracting clinically-labelled
@@ -12,7 +12,7 @@ HOW TO USE:
      Open a command prompt and run:
      pip install praat-parselmouth pandas numpy
 
-  3. Double-click this file (voicepall.pyw) to launch the app.
+  3. Double-click this file (voxam.pyw) to launch the app.
 
 WHAT IT DOES:
 -------------
@@ -47,10 +47,10 @@ except ImportError as e:
     root.withdraw()
     messagebox.showerror(
         "Missing libraries",
-        f"VoicePall needs a one-time library installation.\n\n"
+        f"voxam needs a one-time library installation.\n\n"
         f"Please open a command prompt and run:\n\n"
         f"pip install praat-parselmouth pandas numpy\n\n"
-        f"Then double-click VoicePall again.\n\n"
+        f"Then double-click voxam again.\n\n"
         f"(Technical detail: {e})"
     )
     raise SystemExit
@@ -154,10 +154,10 @@ def extract_voice_features(audio_path):
 # GUI APPLICATION
 # ============================================================
 
-class VoicePallApp:
+class voxamApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("VoicePall — Voice Feature Extraction")
+        self.root.title("voxam — Voice Feature Extraction")
         self.root.geometry("760x720")
         self.root.configure(bg="#f5f5f3")
 
@@ -173,7 +173,7 @@ class VoicePallApp:
 
         # Title
         title = tk.Label(
-            main, text="VoicePall",
+            main, text="voxam",
             font=("Helvetica", 22, "bold"),
             bg="#f5f5f3", fg="#2c2c2a"
         )
@@ -400,10 +400,10 @@ class VoicePallApp:
             return
 
         # Suggest a filename based on the audio file
-        default_name = "voicepall_results.csv"
+        default_name = "voxam_results.csv"
         if self.current_audio_path:
             base = os.path.splitext(os.path.basename(self.current_audio_path))[0]
-            default_name = f"{base}_voicepall_results.csv"
+            default_name = f"{base}_voxam_results.csv"
 
         filepath = filedialog.asksaveasfilename(
             title="Save results as CSV",
@@ -461,7 +461,7 @@ class VoicePallApp:
 
 def main():
     root = tk.Tk()
-    app = VoicePallApp(root)
+    app = voxamApp(root)
     root.mainloop()
 
 
