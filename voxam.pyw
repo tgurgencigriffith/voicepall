@@ -1,5 +1,5 @@
 """
-voxam — Voice Biomarker Extraction for Palliative Care Research
+voxam — Voice Biomarker Extraction for Clinical Research
 ====================================================================
 
 A double-clickable application for extracting clinically-labelled
@@ -18,7 +18,7 @@ WHAT IT DOES:
 -------------
 Extracts ~13 acoustic features from voice recordings — pitch, voice
 quality (jitter/shimmer), clarity (HNR), loudness, timing — and
-labels each one with its relevant palliative symptom domain.
+labels each one with its relevant symptom domain.
 
 Everything runs on your computer. Audio files never leave your machine.
 
@@ -181,7 +181,7 @@ class voxamApp:
 
         subtitle = tk.Label(
             main,
-            text="Voice feature extraction for palliative care research.\n"
+            text="Voice feature extraction for clinical research.\n"
                  "All processing happens on your computer — no data leaves your machine.",
             font=("Helvetica", 10),
             bg="#f5f5f3", fg="#5f5e5a",
