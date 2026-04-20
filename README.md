@@ -1,6 +1,6 @@
-# voicepall
+# voxam
 
-# VoicePall — Getting Started
+# voxam — Getting Started
 
 A voice feature extraction tool for palliative care research.
 All processing happens on your computer — no data leaves your machine.
@@ -25,7 +25,7 @@ Clinicians: I am a clinician - I promise this is straight forward. If run into t
 2. Click the big yellow "Download Python" button
 3. Open the downloaded file and follow the installer prompts
 
-### Step 2 — Install the VoicePall libraries
+### Step 2 — Install the voxam libraries
 
 **Windows:**
 1. Press the Windows key, type `cmd`, and press Enter to open the Command Prompt
@@ -43,20 +43,20 @@ Clinicians: I am a clinician - I promise this is straight forward. If run into t
    ```
 3. Wait for it to finish.
 
-### Step 3 — Download VoicePall
+### Step 3 — Download voxam
 
-1. Download `voicepall.pyw` (and `VoicePall.bat` if you're on Windows) to a folder you can find easily, such as your Desktop.
+1. Download `voxam.pyw` (and `voxam.bat` if you're on Windows) to a folder you can find easily, such as your Desktop.
 
 That's it. Setup is done.
 
 ---
 
-## Using VoicePall
+## Using voxam
 
 ### Every time you want to analyse a recording:
 
-1. **Double-click `VoicePall.bat`** (Windows) or **double-click `voicepall.pyw`** (Mac)
-2. A window opens titled "VoicePall — Voice Feature Extraction"
+1. **Double-click `voxam.bat`** (Windows) or **double-click `voxam.pyw`** (Mac)
+2. A window opens titled "voxam — Voice Feature Extraction"
 3. Click **"Select audio file..."**
 4. Browse to your audio recording and click Open
 5. Results appear in the window a few seconds later
@@ -96,7 +96,7 @@ Important notes:
 **"Python is not recognized" or similar error on Windows:**
 You didn't tick "Add Python to PATH" during installation. Uninstall Python, reinstall, and this time tick the box.
 
-**"Missing libraries" error when opening VoicePall:**
+**"Missing libraries" error when opening voxam:**
 You haven't run the `pip install` command from Step 2. Go back and run it.
 
 **"Could not process this file" error:**
@@ -110,9 +110,9 @@ Please contact t.gurgenci at griffith.edu.au with a description of what you trie
 
 ---
 
-## Citing VoicePall
+## Citing voxam
 
-If you use VoicePall in published research, please cite:
+If you use voxam in published research, please cite:
 
 [Paper citation to be added]
 
